@@ -17,3 +17,4 @@ document.getElementById('cash-out-money-button').addEventListener('click',functi
                 document.getElementById('Transaction-button').addEventListener('click',function(){
                     showSectionById('Transaction-form')
                     })
+                  

@@ -15,18 +15,22 @@
             <div class="camera"></div>
             <div class="display">
               <div class="artboard artboard-demo phone-3"><div class="stats shadow">
-                <div>
+                <div class="flex justify-between items-center gap-10">
                   <div class="stat">
-                    <div class="stat-title">Total Balance</div>
+                    <div class="stat-title text-3xl">Total Balance</div>
                     <div id="main-balance" class="stat-value">400</div>
                 </div>
               </div>
-              <div>
-                <button class="btn"><i class="fa-solid fa-right-from-bracket"></i> Log out</button>
+              <div class="flex items-center">
+                <button class="btn btn-primary"><i class="fa-solid fa-right-from-bracket"></i> Log out</button>
               </div>
                 </div>
             <div class="divider"></div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 mb-8">
+            <div class="text-center">
+              <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+              <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 mb-8 mt-4">
               <button id="add-money-button" class="btn btn-success text-white ">Add Money</button>
               <button id="cash-out-money-button" class="btn btn-success text-white ">Cash Out</button>
               <button id="Transfer-Money-button" class="btn btn-success text-white ">Transfer Money</button>
@@ -78,16 +82,16 @@
                     <label class="label">
                       <span class="label-text">Transfer Money</span>
                     </label>
-                    <input id="input-add-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                    <input id="input-transfer" type="text" placeholder="Enter your amount" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Pin Number</span>
                     </label>
-                    <input id="input-pin" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                    <input id="input-pin2" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
                   </div>
                   <div class="form-control mt-6">
-                    <button id="btn-add-money" class="btn btn-primary">Transfer Money</button>
+                    <button id="btn-transfer" class="btn btn-primary">Transfer Money</button>
                   </div>
                 </form>
               </div>
@@ -97,10 +101,16 @@
                     <label class="label">
                       <span class="label-text">Get Bonus</span>
                     </label>
-                    <input id="input-add-money" type="text" placeholder="Enter your coupon code" class="input input-bordered" required />
+                    <input id="input-bonus" type="text" placeholder="Enter your coupon code" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="input-pin4" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
                   </div>
                   <div class="form-control mt-6">
-                    <button id="btn-add-money" class="btn btn-primary">Get Bonus</button>
+                    <button id="btn-bonus" class="btn btn-primary">Get Bonus</button>
                   </div>
                 </form>
               </div>
@@ -110,21 +120,24 @@
                     <label class="label">
                       <span class="label-text">Pay Bill</span>
                     </label>
-                    <input id="input-add-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                    <input id="input-pay-bill" type="text" placeholder="Enter your amount" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Pin Number</span>
                     </label>
-                    <input id="input-pin" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                    <input id="input-pin3" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
                   </div>
                   <div class="form-control mt-6">
-                    <button id="btn-add-money" class="btn btn-primary">Pay Bill</button>
+                    <button id="btn-pay-bill" class="btn btn-primary">Pay Bill</button>
                   </div>
                 </form>
               </div>
               <div id="Transaction-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                <h3 class="text-center font-bold">Transaction History</h3>
+               <ul>
+
+               </ul>
               </div>
             </div>
             </div>
@@ -135,6 +148,8 @@
     <script src="./toggle.js"></script>
     <script src="./payooo.js"></script>
     <script src="./cash.js"></script>
+    <script src="./transfer.js"></script>
+    <script src="./pay.js"></script>
 
 </body>
 </html>
