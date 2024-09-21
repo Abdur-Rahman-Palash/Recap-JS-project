@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2166435234.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2166435234.js" crossorigin="anonymous"></script>
+    <style>
+        .outfit-font {
+                font-family: "Outfit", sans-serif;
+                }
+        </style>
+</head>
+<body class="outfit-font">
+    <main class="flex justify-center mt-20">
+        <div class=" border-2 border-solid border-slate-300 rounded-md">
+            <h1 class="text-center text-2xl font-semibold mt-6">Payooo Money <br>Financial Services</h1>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-6">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input id="mobile-number" type="text" placeholder="Enter Your Number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit Pin</span>
+                    </label>
+                    <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-logged" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </main>
+   
+    <script src="./login.js"></script>
+</body>
+</html>

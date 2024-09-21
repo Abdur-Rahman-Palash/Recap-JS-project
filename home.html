@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/2166435234.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="flex justify-center mt-6">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3"><div class="stats shadow">
+                <div>
+                  <div class="stat">
+                    <div class="stat-title">Total Balance</div>
+                    <div id="main-balance" class="stat-value">400</div>
+                </div>
+              </div>
+              <div>
+                <button class="btn"><i class="fa-solid fa-right-from-bracket"></i> Log out</button>
+              </div>
+                </div>
+            <div class="divider"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 mb-8">
+              <button id="add-money-button" class="btn btn-success text-white ">Add Money</button>
+              <button id="cash-out-money-button" class="btn btn-success text-white ">Cash Out</button>
+              <button id="Transfer-Money-button" class="btn btn-success text-white ">Transfer Money</button>
+              <button id="Get-Bonus-button" class="btn btn-success text-white ">Get Bonus</button>
+              <button id="Pay-Bill-button" class="btn btn-success text-white ">Pay Bill</button>
+              <button id="Transaction-button" class="btn btn-success text-white ">Transaction</button>
+            </div>
+            <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Add Money</span>
+                    </label>
+                    <input id="input-add-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="input-pin" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                  </div>
+                </form>
+              </div>
+              <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Cash Out</span>
+                    </label>
+                    <input id="input-cash-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="input-pin1" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-cash-out-money" class="btn btn-primary">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+              <div id="Transfer-Money-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Transfer Money</span>
+                    </label>
+                    <input id="input-add-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="input-pin" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary">Transfer Money</button>
+                  </div>
+                </form>
+              </div>
+              <div id="Get-Bonus-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Get Bonus</span>
+                    </label>
+                    <input id="input-add-money" type="text" placeholder="Enter your coupon code" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary">Get Bonus</button>
+                  </div>
+                </form>
+              </div>
+              <div id="Pay-Bill-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pay Bill</span>
+                    </label>
+                    <input id="input-add-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="input-pin" type="password" autocomplete="off" placeholder="Give your pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary">Pay Bill</button>
+                  </div>
+                </form>
+              </div>
+              <div id="Transaction-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+               <h3 class="text-center font-bold">Transaction History</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+    
+    </main>
+    <script src="./utilities.js"></script>
+    <script src="./toggle.js"></script>
+    <script src="./payooo.js"></script>
+    <script src="./cash.js"></script>
+
+</body>
+</html>
