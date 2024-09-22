@@ -1,4 +1,3 @@
-//form er vitor event parameter lage, tachara lage na
 document.getElementById('add-money-button').addEventListener('click',function(){
 showSectionById('add-money-form')
 })
